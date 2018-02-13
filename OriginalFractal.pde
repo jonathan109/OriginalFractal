@@ -1,4 +1,4 @@
-int size = 200;
+int s = 200;
 public void setup()
 {
   size(600,600);
@@ -7,12 +7,12 @@ public void setup()
 public void draw()
 {
   frameRate(1000); 
-  myFractal(300,300,size);
+  myFractal(300,300,s);
 }
 
 public void mousePressed()
 {
-  myFractal(width/2,height/2,size);
+  myFractal(width/2,height/2,s);
   background((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
 }
 
